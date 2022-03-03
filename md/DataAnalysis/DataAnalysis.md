@@ -1,13 +1,5 @@
 ### 数据分析起手式
 
-```python
-import pandas as pd
-import numpy as np
-
-dt = pd.read_csv(r"",sep)
-dt.info()
-```
-
 #### 不放回抽取
 
 ```python
@@ -20,10 +12,7 @@ inde = np.ramdom.permutation(np.arange())
 #### pandas去重
 
 ```python
-DataFrame.Drop_duplicates（subset=None,keep="first",inplace=False,ignore_index=False）
 
-sunset=["column_name1","column_name2"] #去重的依赖子集，默认全部列重复才去
-keep =“first” #默认去重保留第一个重复数据，也可以设为“last”
 
 ```
 
@@ -66,24 +55,6 @@ df.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)
 ```python
 pd.get_dummies(dataframe)
 #返回一个哑变量的矩阵，需要修改表头
-```
-
-#### pandas存进去是列表格式，都出来是字符串
-
-```python
-df["data"] = df["data"].apply(lambda x:eval(x))
-```
-
-#### apply多输入多输出处理
-
-```python
-df = pd.DataFrame(......)
-def func(row):
-  a = row["..."]
-  b = row["..."]
-  ...
-  return A,B
-df[["",""]] = df.apply(func,axis=1,result_type = "expend")
 ```
 
 #### Mysql数据库操作

@@ -65,4 +65,7 @@
 ## Option2 : collect()
 
 PySpark的collect()操作是用来将所有结点中的数据**收集到驱动结点上**(PySpark基于分布式架构)。因此collect()操作一般用于小型数据及上，在大型数据及上使用可能会导致内存不足。
- 
+
+## Option3：show(truncate=100)
+
+显示截断长度。
