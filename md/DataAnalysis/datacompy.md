@@ -44,11 +44,10 @@ print(compare.intersect_rows[['name_df1', 'name_df2', 'name_match']])
 # 3        Bob Loblaw         Robert Loblaw       False
 # 5  Loose Seal Bluth      Loose Seal Bluth        True
 print(compare.df1_unq_rows)#独立行
-#        acct_id  dollar_amt           name  float_fld    date_fld
-# 4  10000001238        1.05  Lucille Bluth        NaN  2017-01-01
 print(compare.intersect_columns())#交集列名
 # {'float_fld', 'acct_id', 'name', 'dollar_amt'}
 print(compare.df1_unq_columns())#独立列名
-# {'date_fld'}
+
+compare.all_mismatch()#显示不同的row
 ```
 
