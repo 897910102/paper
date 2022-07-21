@@ -70,7 +70,7 @@ import pandas as pd
 a = pd.datetime("20210721");b = pd.datetime("20210806") #type Timestamp
 c = b-a #type Timedelta
 
-print(int(c/np.timedelta64(1,"D")))
+    print(int(c/np.timedelta64(1,"D")))
 #------
 #output:
 16
@@ -168,5 +168,20 @@ lyst = [.....]
 f = open("./lyst.txt","w")
 f.write(str(lyst))
 f.close
+```
+
+## Jupyter notebook 永不挂机
+
+```shell
+nohup jupyter notebook --allow-root --port 1104 > jupyter.log 2>1 &
+```
+
+### 两个notebook   合并   nbmerge
+
+```shell
+#安装包
+pip install nbmerge
+#命令行操作文件
+nbmerge 1.ipynb 2.ipynb > 3.ipynb
 ```
 

@@ -12,8 +12,7 @@ inde = np.ramdom.permutation(np.arange())
 #### pandas去重
 
 ```python
-
-
+df[~df.duplicate()]
 ```
 
 #### Pandas 离散数据类型排序
@@ -23,7 +22,6 @@ inde = np.ramdom.permutation(np.arange())
 list_sort = ['','','','','']
 df["columns1"] = df["columns1"].astype("category".cat.set_categories(list_sorted))
 df_sorts = df.sort_values(by=["columns1"],asending=Ture)
-
 #------------------------sort参数：na_postion =“False”#default    可替换为first
 ```
 

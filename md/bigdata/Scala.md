@@ -22,8 +22,6 @@ option != None -> option.isDefined
 
 ```
 
-
-
 ### Scala关键词-lazy
 
 **Scala中使用关键字lazy来定义惰性变量，实现延迟加载(懒加载)。** 

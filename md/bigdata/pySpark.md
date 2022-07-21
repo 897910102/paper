@@ -62,8 +62,10 @@ scp	-r -P 22122 xxx.csv.tar.gz usename@106.75.103.111:/home/usrname/  #远程拷
 
 ### 排序技巧
 
-```
-	.orderBy(desc("colname"))
+```python
+df.orderBy(desc("colname"))
+#or
+df.sort('p_date',ascending=False)
 ```
 
 ### org.apache.spark.sql.functions 函数总览
